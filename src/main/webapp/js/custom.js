@@ -57,6 +57,15 @@ var tags
 $(function () {
 
     function initMap() {
+        $.ajax({
+            url: 'https://apex.oracle.com/pls/apex/domospace/university/university/',
+            success: function(result) {
+                result.items
+            }
+        })
+    }
+
+    function setGoogleMap() {
 
         var location = new google.maps.LatLng(56.8546004, 60.638816);
 
@@ -78,22 +87,22 @@ $(function () {
                 icon: './img/university.png'
             });
 
+            var contentString = '<div class="info-window">' +
+                '<h3>Info Window Content</h3>' +
+                '<div class="info-content">' +
+                '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
+                '</div>' +
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 400
+            });
+
             marker.addListener('click', function () {
                 infowindow.open(map, marker);
             });
         })
-
-        var contentString = '<div class="info-window">' +
-            '<h3>Info Window Content</h3>' +
-            '<div class="info-content">' +
-            '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
-            '</div>' +
-            '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 400
-        });
 
         var styles = [
             {

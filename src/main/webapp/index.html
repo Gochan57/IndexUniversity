@@ -59,7 +59,7 @@
 
                 var root = d3.hierarchy({children: curData})
                     .sum(function (d) {
-                        return Math.abs(d.value);
+                        return Math.max(0.3, Math.abs(d.value));
                     })
                     .sort(function (a, b) {
                         return b.value - a.value;
@@ -101,7 +101,7 @@
                     .attr("clip-path", function (d) {
                         return "url(#clip-" + d.data.tag + ")";
                     })
-                    .selectAll("tspan")
+                    .selectAll("p")
                     .data(function (d) {
                         return d.data.tag.split(".").pop().split(/(?=[A-Z][^A-Z])/g);
                     })
@@ -119,13 +119,6 @@
                         return d.data.tag + "\n" + format(Math.abs(d.value));
                     });
 
-                node.exit()
-
-                var node2 = svg.select("g")
-                    .selectAll("g")
-                    .data(root.children)
-                    .enter().append("text")
-                    .text("HELLO")
             });
         })
     }

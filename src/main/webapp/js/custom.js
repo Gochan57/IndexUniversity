@@ -60,7 +60,15 @@ $(function () {
         $.ajax({
             url: 'https://apex.oracle.com/pls/apex/domospace/university/university/',
             success: function(result) {
-                result.items
+                _.each(result.items, function(u) {
+                    var university = _.find(universities, function(c) {return c.id == u.id})
+                    if(university) {
+                        university.fullName = u.fullname
+                        university.shortName = u.shortname
+                        university.address = u.address
+                    }
+                })
+                setGoogleMap()
             }
         })
     }
@@ -86,12 +94,16 @@ $(function () {
                 map: map,
                 icon: './img/university.png'
             });
+            var shortname = university.shortName||university.fullName||'Название неизвестно'
+            var address = university.address||'Адрес неизвестен'
+            var id = university.id
 
             var contentString = '<div class="info-window">' +
-                '<h3>Info Window Content</h3>' +
+                '<h3>'+shortname+'</h3>' +
                 '<div class="info-content">' +
-                '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
+                '<p>'+address+'</p>' +
                 '</div>' +
+                (id ? '<a href="./university.html?unId='+id+'">Перейти на страницу университета</a>' : '') +
                 '</div>';
 
             var infowindow = new google.maps.InfoWindow({

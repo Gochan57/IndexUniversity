@@ -1,0 +1,882 @@
+[
+	{
+		"tag": "AgglomerativeCluster",
+		"value": -0.697973612
+	},
+	{
+		"tag": "CommunityStructure",
+		"value": -0.708331621
+	},
+	{
+		"tag": "HierarchicalCluster",
+		"value": -0.469768589
+	},
+	{
+		"tag": "MergeEdge",
+		"value": -0.960623125
+	},
+	{
+		"tag": "BetweennessCentrality",
+		"value": -0.731185006
+	},
+	{
+		"tag": "LinkDistance",
+		"value": -0.5505775
+	},
+	{
+		"tag": "MaxFlowMinCut",
+		"value": -0.37720416
+	},
+	{
+		"tag": "ShortestPaths",
+		"value": -0.535533725
+	},
+	{
+		"tag": "SpanningTree",
+		"value": -0.740885363
+	},
+	{
+		"tag": "AspectRatioBanker",
+		"value": -0.440174278
+	},
+	{
+		"tag": "Easing",
+		"value": 0.376628715
+	},
+	{
+		"tag": "FunctionSequence",
+		"value": -0.541452587
+	},
+	{
+		"tag": "ArrayInterpolator",
+		"value": -0.858687163
+	},
+	{
+		"tag": "ColorInterpolator",
+		"value": -0.853425953
+	},
+	{
+		"tag": "DateInterpolator",
+		"value": -0.908668667
+	},
+	{
+		"tag": "Interpolator",
+		"value": -0.302725143
+	},
+	{
+		"tag": "MatrixInterpolator",
+		"value": -0.840683957
+	},
+	{
+		"tag": "NumberInterpolator",
+		"value": -0.908093222
+	},
+	{
+		"tag": "ObjectInterpolator",
+		"value": -0.887788236
+	},
+	{
+		"tag": "PointInterpolator",
+		"value": -0.884006741
+	},
+	{
+		"tag": "RectangleInterpolator",
+		"value": -0.853836985
+	},
+	{
+		"tag": "ISchedulable",
+		"value": -0.936125611
+	},
+	{
+		"tag": "Parallel",
+		"value": -0.596202063
+	},
+	{
+		"tag": "Pause",
+		"value": -0.984791812
+	},
+	{
+		"tag": "Scheduler",
+		"value": -0.561921986
+	},
+	{
+		"tag": "Sequence",
+		"value": -0.566772165
+	},
+	{
+		"tag": "Transition",
+		"value": -0.265321222
+	},
+	{
+		"tag": "Transitioner",
+		"value": 0.620370751
+	},
+	{
+		"tag": "TransitionEvent",
+		"value": -0.92996013
+	},
+	{
+		"tag": "Tween",
+		"value": -0.527970735
+	},
+	{
+		"tag": "Converters",
+		"value": -0.962431666
+	},
+	{
+		"tag": "DelimitedTextConverter",
+		"value": -0.668708126
+	},
+	{
+		"tag": "GraphMLConverter",
+		"value": -0.216079576
+	},
+	{
+		"tag": "IDataConverter",
+		"value": -0.913683259
+	},
+	{
+		"tag": "JSONConverter",
+		"value": -0.839204242
+	},
+	{
+		"tag": "DataField",
+		"value": -0.877101402
+	},
+	{
+		"tag": "DataSchema",
+		"value": -0.843725595
+	},
+	{
+		"tag": "DataSet",
+		"value": -0.973529533
+	},
+	{
+		"tag": "DataSource",
+		"value": -0.747872909
+	},
+	{
+		"tag": "DataTable",
+		"value": -0.958239138
+	},
+	{
+		"tag": "DataUtil",
+		"value": -0.748612767
+	},
+	{
+		"tag": "DirtySprite",
+		"value": -0.295573184
+	},
+	{
+		"tag": "LineSprite",
+		"value": -0.879320975
+	},
+	{
+		"tag": "RectSprite",
+		"value": -0.723868634
+	},
+	{
+		"tag": "TextSprite",
+		"value": -0.194212668
+	},
+	{
+		"tag": "FlareVis",
+		"value": -0.683340869
+	},
+	{
+		"tag": "DragForce",
+		"value": -0.932755148
+	},
+	{
+		"tag": "GravityForce",
+		"value": -0.911874717
+	},
+	{
+		"tag": "IForce",
+		"value": -0.995478647
+	},
+	{
+		"tag": "NBodyForce",
+		"value": -0.158699494
+	},
+	{
+		"tag": "Particle",
+		"value": -0.789715977
+	},
+	{
+		"tag": "Simulation",
+		"value": -0.201035801
+	},
+	{
+		"tag": "Spring",
+		"value": -0.839779687
+	},
+	{
+		"tag": "SpringForce",
+		"value": -0.883513502
+	},
+	{
+		"tag": "AggregateExpression",
+		"value": -0.88885692
+	},
+	{
+		"tag": "And",
+		"value": -0.937276501
+	},
+	{
+		"tag": "Arithmetic",
+		"value": -0.701837313
+	},
+	{
+		"tag": "Average",
+		"value": -0.948456574
+	},
+	{
+		"tag": "BinaryExpression",
+		"value": -0.783879321
+	},
+	{
+		"tag": "Comparison",
+		"value": -0.602203132
+	},
+	{
+		"tag": "CompositeExpression",
+		"value": -0.719429487
+	},
+	{
+		"tag": "Count",
+		"value": -0.957499281
+	},
+	{
+		"tag": "DateUtil",
+		"value": -0.681285708
+	},
+	{
+		"tag": "Distinct",
+		"value": -0.945003905
+	},
+	{
+		"tag": "Expression",
+		"value": -0.599983559
+	},
+	{
+		"tag": "ExpressionIterator",
+		"value": -0.724361873
+	},
+	{
+		"tag": "Fn",
+		"value": -0.755353693
+	},
+	{
+		"tag": "If",
+		"value": -0.797114555
+	},
+	{
+		"tag": "IsA",
+		"value": -0.854083604
+	},
+	{
+		"tag": "Literal",
+		"value": -0.921903901
+	},
+	{
+		"tag": "Match",
+		"value": -0.713592832
+	},
+	{
+		"tag": "Maximum",
+		"value": -0.952402483
+	},
+	{
+		"tag": "add",
+		"value": -0.972954088
+	},
+	{
+		"tag": "and",
+		"value": -0.994574376
+	},
+	{
+		"tag": "average",
+		"value": -0.998109252
+	},
+	{
+		"tag": "count",
+		"value": -0.998931317
+	},
+	{
+		"tag": "distinct",
+		"value": -0.99769822
+	},
+	{
+		"tag": "div",
+		"value": -0.972789675
+	},
+	{
+		"tag": "eq",
+		"value": -0.972871881
+	},
+	{
+		"tag": "fn",
+		"value": -0.983887542
+	},
+	{
+		"tag": "gt",
+		"value": -0.972132024
+	},
+	{
+		"tag": "gte",
+		"value": -0.970323482
+	},
+	{
+		"tag": "iff",
+		"value": -0.960212093
+	},
+	{
+		"tag": "isa",
+		"value": -0.983805335
+	},
+	{
+		"tag": "lt",
+		"value": -0.972625262
+	},
+	{
+		"tag": "lte",
+		"value": -0.970816721
+	},
+	{
+		"tag": "max",
+		"value": -0.998438078
+	},
+	{
+		"tag": "min",
+		"value": -0.998438078
+	},
+	{
+		"tag": "mod",
+		"value": -0.973118501
+	},
+	{
+		"tag": "mul",
+		"value": -0.972132024
+	},
+	{
+		"tag": "neq",
+		"value": -0.972460849
+	},
+	{
+		"tag": "not",
+		"value": -0.989970817
+	},
+	{
+		"tag": "or",
+		"value": -0.995149821
+	},
+	{
+		"tag": "orderby",
+		"value": -0.996465124
+	},
+	{
+		"tag": "range",
+		"value": -0.958239138
+	},
+	{
+		"tag": "select",
+		"value": -0.997369395
+	},
+	{
+		"tag": "stddev",
+		"value": -0.991861564
+	},
+	{
+		"tag": "sub",
+		"value": -0.972378643
+	},
+	{
+		"tag": "sum",
+		"value": -0.998684697
+	},
+	{
+		"tag": "update",
+		"value": -0.996465124
+	},
+	{
+		"tag": "variance",
+		"value": -0.994163344
+	},
+	{
+		"tag": "where",
+		"value": -0.997122775
+	},
+	{
+		"tag": "xor",
+		"value": -0.992601422
+	},
+	{
+		"tag": "_",
+		"value": -1
+	},
+	{
+		"tag": "Minimum",
+		"value": -0.952402483
+	},
+	{
+		"tag": "Not",
+		"value": -0.893953718
+	},
+	{
+		"tag": "Or",
+		"value": -0.941962267
+	},
+	{
+		"tag": "Query",
+		"value": 0.120637922
+	},
+	{
+		"tag": "Range",
+		"value": -0.890665461
+	},
+	{
+		"tag": "StringUtil",
+		"value": -0.682189979
+	},
+	{
+		"tag": "Sum",
+		"value": -0.956677216
+	},
+	{
+		"tag": "Variable",
+		"value": -0.929302479
+	},
+	{
+		"tag": "Variance",
+		"value": -0.86748325
+	},
+	{
+		"tag": "Xor",
+		"value": -0.931193226
+	},
+	{
+		"tag": "IScaleMap",
+		"value": -0.84865798
+	},
+	{
+		"tag": "LinearScale",
+		"value": -0.913518846
+	},
+	{
+		"tag": "LogScale",
+		"value": -0.762670065
+	},
+	{
+		"tag": "OrdinalScale",
+		"value": -0.71178429
+	},
+	{
+		"tag": "QuantileScale",
+		"value": -0.821529861
+	},
+	{
+		"tag": "QuantitativeScale",
+		"value": -0.623905627
+	},
+	{
+		"tag": "RootScale",
+		"value": -0.877348021
+	},
+	{
+		"tag": "Scale",
+		"value": -0.670845493
+	},
+	{
+		"tag": "ScaleType",
+		"value": -0.872004604
+	},
+	{
+		"tag": "TimeScale",
+		"value": -0.542192445
+	},
+	{
+		"tag": "Arrays",
+		"value": -0.342841876
+	},
+	{
+		"tag": "Colors",
+		"value": -0.199556085
+	},
+	{
+		"tag": "Dates",
+		"value": -0.346212339
+	},
+	{
+		"tag": "Displays",
+		"value": 0.010399112
+	},
+	{
+		"tag": "Filter",
+		"value": -0.830654774
+	},
+	{
+		"tag": "Geometry",
+		"value": -0.118007316
+	},
+	{
+		"tag": "FibonacciHeap",
+		"value": -0.252743639
+	},
+	{
+		"tag": "HeapNode",
+		"value": -0.920341979
+	},
+	{
+		"tag": "IEvaluable",
+		"value": -0.994163344
+	},
+	{
+		"tag": "IPredicate",
+		"value": -0.990217436
+	},
+	{
+		"tag": "IValueProxy",
+		"value": -0.949854084
+	},
+	{
+		"tag": "DenseMatrix",
+		"value": -0.761519175
+	},
+	{
+		"tag": "IMatrix",
+		"value": -0.790291422
+	},
+	{
+		"tag": "SparseMatrix",
+		"value": -0.744995684
+	},
+	{
+		"tag": "Maths",
+		"value": 0.433762177
+	},
+	{
+		"tag": "Orientation",
+		"value": -0.899543754
+	},
+	{
+		"tag": "ColorPalette",
+		"value": -0.498294217
+	},
+	{
+		"tag": "Palette",
+		"value": -0.920670804
+	},
+	{
+		"tag": "ShapePalette",
+		"value": -0.852439476
+	},
+	{
+		"tag": "SizePalette",
+		"value": -0.833367586
+	},
+	{
+		"tag": "Property",
+		"value": -0.564717004
+	},
+	{
+		"tag": "Shapes",
+		"value": 0.549919849
+	},
+	{
+		"tag": "Sort",
+		"value": -0.455546878
+	},
+	{
+		"tag": "Stats",
+		"value": -0.482674997
+	},
+	{
+		"tag": "Strings",
+		"value": 0.788976119
+	},
+	{
+		"tag": "Axes",
+		"value": -0.914669736
+	},
+	{
+		"tag": "Axis",
+		"value": 1
+	},
+	{
+		"tag": "AxisGridLine",
+		"value": -0.968103909
+	},
+	{
+		"tag": "AxisLabel",
+		"value": -0.969419212
+	},
+	{
+		"tag": "CartesianAxes",
+		"value": -0.47067286
+	},
+	{
+		"tag": "AnchorControl",
+		"value": -0.845945168
+	},
+	{
+		"tag": "ClickControl",
+		"value": -0.707345144
+	},
+	{
+		"tag": "Control",
+		"value": -0.910477208
+	},
+	{
+		"tag": "ControlList",
+		"value": -0.638209544
+	},
+	{
+		"tag": "DragControl",
+		"value": -0.803937688
+	},
+	{
+		"tag": "ExpandControl",
+		"value": -0.788893913
+	},
+	{
+		"tag": "HoverControl",
+		"value": -0.619219861
+	},
+	{
+		"tag": "IControl",
+		"value": -0.958978996
+	},
+	{
+		"tag": "PanZoomControl",
+		"value": -0.592420568
+	},
+	{
+		"tag": "SelectionControl",
+		"value": -0.375395618
+	},
+	{
+		"tag": "TooltipControl",
+		"value": -0.32829134
+	},
+	{
+		"tag": "Data",
+		"value": 0.667146204
+	},
+	{
+		"tag": "DataList",
+		"value": 0.60499815
+	},
+	{
+		"tag": "DataSprite",
+		"value": -0.170948251
+	},
+	{
+		"tag": "EdgeSprite",
+		"value": -0.750339101
+	},
+	{
+		"tag": "NodeSprite",
+		"value": 0.571622344
+	},
+	{
+		"tag": "ArrowType",
+		"value": -0.964322414
+	},
+	{
+		"tag": "EdgeRenderer",
+		"value": -0.56389494
+	},
+	{
+		"tag": "IRenderer",
+		"value": -0.992683629
+	},
+	{
+		"tag": "ShapeRenderer",
+		"value": -0.836984669
+	},
+	{
+		"tag": "ScaleBinding",
+		"value": -0.094825106
+	},
+	{
+		"tag": "Tree",
+		"value": -0.434173209
+	},
+	{
+		"tag": "TreeBuilder",
+		"value": -0.205392741
+	},
+	{
+		"tag": "DataEvent",
+		"value": -0.831559045
+	},
+	{
+		"tag": "SelectionEvent",
+		"value": -0.867154425
+	},
+	{
+		"tag": "TooltipEvent",
+		"value": -0.881869374
+	},
+	{
+		"tag": "VisualizationEvent",
+		"value": -0.929877923
+	},
+	{
+		"tag": "Legend",
+		"value": 0.693041227
+	},
+	{
+		"tag": "LegendItem",
+		"value": -0.642402072
+	},
+	{
+		"tag": "LegendRange",
+		"value": -0.156068889
+	},
+	{
+		"tag": "BifocalDistortion",
+		"value": -0.654979654
+	},
+	{
+		"tag": "Distortion",
+		"value": -0.502651157
+	},
+	{
+		"tag": "FisheyeDistortion",
+		"value": -0.738583583
+	},
+	{
+		"tag": "ColorEncoder",
+		"value": -0.760368285
+	},
+	{
+		"tag": "Encoder",
+		"value": -0.687944428
+	},
+	{
+		"tag": "PropertyEncoder",
+		"value": -0.681532328
+	},
+	{
+		"tag": "ShapeEncoder",
+		"value": -0.882773645
+	},
+	{
+		"tag": "SizeEncoder",
+		"value": -0.871264746
+	},
+	{
+		"tag": "FisheyeTreeFilter",
+		"value": -0.592667187
+	},
+	{
+		"tag": "GraphDistanceFilter",
+		"value": -0.761519175
+	},
+	{
+		"tag": "VisibilityFilter",
+		"value": -0.733240166
+	},
+	{
+		"tag": "IOperator",
+		"value": -0.915985038
+	},
+	{
+		"tag": "Labeler",
+		"value": -0.203255374
+	},
+	{
+		"tag": "RadialLabeler",
+		"value": -0.701179662
+	},
+	{
+		"tag": "StackedAreaLabeler",
+		"value": -0.758477537
+	},
+	{
+		"tag": "AxisLayout",
+		"value": -0.468864318
+	},
+	{
+		"tag": "BundledEdgeRouter",
+		"value": -0.715319166
+	},
+	{
+		"tag": "CircleLayout",
+		"value": -0.255785277
+	},
+	{
+		"tag": "CirclePackingLayout",
+		"value": -0.034978832
+	},
+	{
+		"tag": "DendrogramLayout",
+		"value": -0.622754737
+	},
+	{
+		"tag": "ForceDirectedLayout",
+		"value": -0.330264294
+	},
+	{
+		"tag": "IcicleTreeLayout",
+		"value": -0.621850467
+	},
+	{
+		"tag": "IndentedTreeLayout",
+		"value": -0.760779317
+	},
+	{
+		"tag": "Layout",
+		"value": -0.373833696
+	},
+	{
+		"tag": "NodeLinkTreeLayout",
+		"value": 0.036294135
+	},
+	{
+		"tag": "PieLayout",
+		"value": -0.79744338
+	},
+	{
+		"tag": "RadialTreeLayout",
+		"value": -0.006617617
+	},
+	{
+		"tag": "RandomLayout",
+		"value": -0.950182909
+	},
+	{
+		"tag": "StackedAreaLayout",
+		"value": -0.271897735
+	},
+	{
+		"tag": "TreeMapLayout",
+		"value": -0.266143286
+	},
+	{
+		"tag": "Operator",
+		"value": -0.817008508
+	},
+	{
+		"tag": "OperatorList",
+		"value": -0.590283201
+	},
+	{
+		"tag": "OperatorSequence",
+		"value": -0.677257594
+	},
+	{
+		"tag": "OperatorSwitch",
+		"value": -0.809527724
+	},
+	{
+		"tag": "SortOperator",
+		"value": -0.855398907
+	},
+	{
+		"tag": "Visualization",
+		"value": 0.337991697
+	}
+]

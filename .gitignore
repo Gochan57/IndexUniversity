@@ -3,7 +3,7 @@
 
 .idea/
 *.iml
-
+target/
 ### Java ###
 # Compiled class file
 *.class

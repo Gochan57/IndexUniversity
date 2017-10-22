@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    text {
+        font: 10px sans-serif;
+        text-anchor: middle;
+    }
+
+    .node:hover circle {
+        stroke: #000;
+        stroke-width: 1.2px;
+    }
+
+</style>
+<script src="./lib/d3/d3.min.js"></script>
+<script src="./lib/underscore-min.js"></script>
+<script>
+    window.onload = function() {
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return (false);
+        }
+
+        var unId = getQueryVariable("unId")
+
+        d3.select('g').attr('flag', 'par')
+
+        _.each(["left", "right"], function (id) {
+            var svg = d3.select("#"+id),
+                width = +svg.attr("width"),
+                height = +svg.attr("height");
+
+            var format = d3.format(",d");
+
+            var pack = d3.pack()
+                .size([width - 2, height - 2])
+                .padding(3);
+
+            d3.json("./data/tags.json", function (error, data) {
+                if (error) throw error;
+
+                var posData = _.filter(data[unId], function (el) {
+                    return el.value > 0
+                })
+
+                var negData = _.filter(data[unId], function (el) {
+                    return el.value < 0
+                })
+
+                var curData = id === 'left' ? posData : negData
+
+                var root = d3.hierarchy({children: curData})
+                    .sum(function (d) {
+                        return Math.abs(d.value);
+                    })
+                    .sort(function (a, b) {
+                        return b.value - a.value;
+                    });
+
+                pack(root);
+
+                var node = svg.select("g")
+                    .selectAll("g")
+                    .data(root.children)
+                    .enter().append("g")
+                    .attr("transform", function (d) {
+                        return "translate(" + d.x + "," + d.y + ")";
+                    })
+                    .attr("class", "node");
+
+                node.append("circle")
+                    .attr("id", function (d) {
+                        return "node-" + d.data.tag;
+                    })
+                    .attr("r", function (d) {
+                        return d.r;
+                    })
+                    .attr("fill", function (d) {
+                        var a = (d.value + 1) / 2;
+                        return d.data.value > 0 ? "rgba(0, 255, 0, " + a + ")" : "rgba(255, 0, 0, " + a + ")";
+                    })
+
+                node.append("clipPath")
+                    .attr("id", function (d) {
+                        return "clip-" + d.data.tag;
+                    })
+                    .append("use")
+                    .attr("xlink:href", function (d) {
+                        return "#node-" + d.data.tag + "";
+                    });
+
+                node.append("text")
+                    .attr("clip-path", function (d) {
+                        return "url(#clip-" + d.data.tag + ")";
+                    })
+                    .selectAll("tspan")
+                    .data(function (d) {
+                        return d.data.tag.split(".").pop().split(/(?=[A-Z][^A-Z])/g);
+                    })
+                    .enter().append("tspan")
+                    .attr("x", 0)
+                    .attr("y", function (d, i, nodes) {
+                        return 13 + (i - nodes.length / 2 - 0.5) * 10;
+                    })
+                    .text(function (d) {
+                        return d;
+                    });
+
+                node.append("title")
+                    .text(function (d) {
+                        return d.data.tag + "\n" + format(Math.abs(d.value));
+                    });
+
+                node.exit()
+
+                var node2 = svg.select("g")
+                    .selectAll("g")
+                    .data(root.children)
+                    .enter().append("text")
+                    .text("HELLO")
+            });
+        })
+    }
+</script>
+<svg id="left" width="200" height="200"><g transform="translate(1,1)"></g></svg>
+<svg id="right" width="200" height="200"><g transform="translate(1,1)"></g></svg>

@@ -50,7 +50,9 @@
 <div class="jumbotron">
     <div class="container text-center">
         <h2>Университеты по регионам России</h2>
-        <div id="map" style="width: 1200px; height: 500px"></div>
+        <div id="map" style="position: relative; width: 1200px; height: 500px">
+            <img src="./img/Crimia.png" style="position: absolute; top: 435px; left: 80px; z-index: 10"></img>
+        </div>
         <script>
             $(function(){
                 $('#map').vectorMap({

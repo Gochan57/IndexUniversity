@@ -1,4 +1,46 @@
-var universities = [[56.839563,60.6326293]]
+var universities = [
+    {
+        id: 1,
+        coords: [56.839563, 60.6326293],
+    },
+    {
+        id: 2,
+        coords: [56.852746, 60.5878303]
+    }
+]
+
+var tags = {
+    1: [
+        {
+            tag: 'обучение',
+            value: 0.9
+        },
+        {
+            tag: 'английский',
+            value: -0.2
+        },
+        {
+            tag: 'преподаватели',
+            value: 0.5
+        }
+    ],
+    2: [
+        {
+            tag: 'обучение',
+            value: 0.2
+        },
+        {
+            tag: 'английский',
+            value: 1
+        },
+        {
+            tag: 'преподаватели',
+            value: -0.3
+        }
+    ]
+}
+
+var tags
 
 $(function () {
 
@@ -16,8 +58,8 @@ $(function () {
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
 
-        universities.forEach(function(coords) {
-            var loc = new google.maps.LatLng(coords[0], coords[1]);
+        universities.forEach(function(university) {
+            var loc = new google.maps.LatLng(university.coords[0], university.coords[1]);
             var marker = new google.maps.Marker({
                 position: loc,
                 map: map,
